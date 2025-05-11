@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dimas putra</title>
+    <link rel="stylesheet" href="styles.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">My Portfolio</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+
+    <section id="home">
+        <video class="background-video" autoplay muted loop playsinline>
+            <source src="image/bcg.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="overlay"></div>
+        <div class="home-container">
+            <div class="home-text">
+                <h1 class= "slide-in">Hi, I'm DIMAS PUTRA PRIHATONO</h1>
+                <p>Mahasiswa Informatika | Web Developer Pemula</p>
+                <ul class="social-links">
+                    <li>
+                        <a href="https://wa.me/085253369847" target="_blank">
+                            <i class="fab fa-whatsapp"></i> 
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/dimasputra.28_?igsh=MXhxOXBtY214bXlq" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://x.com/akuhatkorlek666?s=21" target="_blank">
+                            <i class="fab fa-twitter"></i> 
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="home-image">
+                <img src="image/profil.jpeg" alt="profile picture">
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <p>Halo, perkenalkan saya dimas. saya mahasiswa Teknik Informasi semester 4 salah satu perguruan tinggi dikota BANDUNG. alasan saya memilih jurusan ini karena memiliki ketertarikan besar pada teknologi dan pemrograman. saya ingin memahami bagaimana sistem komputer berkerja,menciptakan solusi digital yang bermanfaat, dan berkontribusi dalam perkembangan teknologi masa depan </p>
+        </div>
+    </section>
+    <section id="skills">
+        <h2>My Skills</h2>
+        <div class="skills-carousel">
+            <div class="carousel-track">
+                <div class="carousel-slide">
+                    <div class="skill-item">
+                        <i class="fab fa-html5"></i>
+                        <h3>HTML</h3>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 90%;">90%</div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fab fa-css3-alt"></i>
+                        <h3>CSS</h3>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 80%;">80%</div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fab fa-java"></i>
+                        <h3>Java</h3>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 60%;">60%</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-slide">
+                    <div class="skill-item">
+                        <i class="fab fa-python"></i>
+                        <h3>Python</h3>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 30%;">30%</div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fab fa-windows"></i>
+                        <h3>Microsoft</h3>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 90%;">90%</div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-tools"></i>
+                        <h3>Bongkar Motor</h3>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 100%;">101%</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-btn prev" onclick="prevSlide()">❮</button>
+            <button class="carousel-btn next" onclick="nextSlide()">❯</button>
+            <div class="carousel-dots">
+                <span class="dot active" onclick="goToSlide(0)"></span>
+                <span class="dot" onclick="goToSlide(1)"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio">
+        <h2>My Portfolio</h2>
+        <!-- Tambahkan kalimat di sini -->
+        <p class="portfolio-note">Kalo proyek didalam materi perkuliahan belom ada tapi kalo projek diluar perkuliahan ada</p>
+        <div class="portfolio-grid">
+            <div class="portfolio-item">
+                <img src="image/foto.jpeg" alt="Project 1">
+                <h3>Project 1</h3>
+                <p>sedang membangun aerox 155 spek 60 harian, target projek selesai awal perkuliahan semester 5</p>
+            </div>
+            <div class="portfolio-item">
+                <img src="image/foto2.jpeg" alt="Project 1">
+                <h3>Project 2</h3>
+                <p>sedang membuat usaha clothing bersama teman</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <div class="contact-info">
+            <p>Email: <a href="putraprihatono66@gmail.com">putraprihatono66@gmail.com</a></p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 DIMAS PUTRA PRIHATONO. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
